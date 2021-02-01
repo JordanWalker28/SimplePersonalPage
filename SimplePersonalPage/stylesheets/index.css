@@ -1,3 +1,50 @@
-
+@keyframes boxshadow {
+  0% {
+    border-color: orange;
+  }
+  50% {
+    border-color: rgb(196, 52, 0);
+  }
+  100% {
+    border-color: orange;
+  }
+}
+#header {
+  background-color: lightblue;
+  min-height: 3em;
+}
+#header #header-inner {
+  width: 80%;
+  margin: 0 auto;
+  background-color: green;
+  min-height: inherit;
+  border: 3px solid black;
+  border-radius: 5px;
+  animation-name: boxshadow;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+#header #header-inner #buttons {
+  color: blue;
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+}
+#header #header-inner #buttons p {
+  margin: 0 auto;
+  margin-top: 1em;
+  width: 3em;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  animation-name: boxshadow;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  background-color: black;
+}
+#header #header-inner #buttons p:hover {
+  background-color: #ffa600;
+  color: black;
+}
 
 /*# sourceMappingURL=index.css.map */
