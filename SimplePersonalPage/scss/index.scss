@@ -7,7 +7,6 @@ body {
 }
 
 #header{
-    background-color: rgba(173, 216, 230, 0.377);
     min-height: 3em;
     #header-inner{
         width: 80%;
@@ -43,6 +42,18 @@ body {
                     color: $black;
                 }
             }
+            a:link, a:visited {
+                background-color: #f44336;
+                color: white;
+                padding: 14px 25px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+              }
+              
+              a:hover, a:active {
+                background-color: red;
+              }
         }
 
         #welcomeMessage{
@@ -52,5 +63,43 @@ body {
             font-weight: bold;
             font-size: 1.7em;
         }
+    }
+}
+
+#body{
+    #bodyInner{
+        margin: 0 auto;
+        width: 80%;
+        min-height: 600px;
+        background-color: $background-color;
+        margin-top: 4em;
+        border: 1px solid black;
+        border-radius: 10px;
+        animation-name: boxshadow;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+}
+
+#footer{
+    #footerDiv{
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 4em;
+        min-height: 5em;
+        background-color: $background-color;
+        border: 1px solid black;
+        border-radius: 10px;
+        animation-name: boxshadow;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        
+        p{
+            color: $orange;
+            text-align: center;
+            font-weight: bold;
+            font-size: 2em;
+        }
+        
     }
 }
