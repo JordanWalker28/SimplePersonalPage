@@ -6,6 +6,60 @@
     <title>Document</title>
 </head>
 <body>
-    <p>Hello this is the Contact page</p>
+    <form action="https://formspree.io/f/xyybvedr" method="post" id="contact-form" name="contact-form">
+        <fieldset class="formFields">
+            <legend> Your Info</legend>
+
+            <div>
+                <div class="label">
+                    <label for="firstname" title="Enter your first name">First Name</label>
+                </div>
+                <div>
+                    <input class="input" type="text" maxlength="40" title="Enter your first name" required
+                    tabindex="1" name="firstname" id="firstname" placeholder="John">
+                </div>
+            </div>
+
+            <div>
+                <div class="label">
+                    <label for="lastname" title="Enter your last name">Last Name</label>
+                </div>
+                <div>
+                    <input class="input" type="text" maxlength="40" title="Enter your last name" required
+                    tabindex="2" name="lastname" id="lastname" placeholder="Doe">
+                </div>
+            </div>
+
+            <div>
+                <div class="label">
+                    <label for="email" title="Enter your email">Email Address</label>
+                </div>
+                <div>
+                    <input class="input" type="email" maxlength="70" title="Enter your last name" required
+                    tabindex="3" name="email" id="email" placeholder="John.Doe@gmail.com">
+                </div>
+            </div>
+
+            <div>
+                <div class="label">
+                    <label for="subject" title="Enter your Subject">Subject</label>
+                </div>
+                <div>
+                    <input class="input" type="text" maxlength="40" title="Enter your last name" required
+                    tabindex="4" name="subject" id="subject" placeholder="Topic">
+                </div>
+            </div>
+
+        </fieldset>
+
+        <fieldset class="formFields">
+            <legend> Write to me</legend>
+            <textarea class="input2" name="SubjectLongForm" id="textareacontact" cols="30" rows="10" placeholder="Your Message Goes Here" tabindex="5" maxlength="2000" title="Your Message Goes Here"></textarea>
+            <div>
+                <input class="submit" type="submit" value="Submit" id="submit" tabindex="6">
+            </div>
+            
+        </fieldset>
+    </form>
 </body>
 </html>
