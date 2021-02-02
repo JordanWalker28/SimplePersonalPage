@@ -11,7 +11,7 @@
 }
 body {
   background-image: url(../src/image/background.jpg);
-  background-size: auto;
+  background-size: cover;
 }
 
 #header {
@@ -26,7 +26,7 @@ body {
   border: 3px solid black;
   border-radius: 5px;
   animation-name: boxshadow;
-  animation-duration: 0.2s;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
 }
 #header #header-inner #buttons {
