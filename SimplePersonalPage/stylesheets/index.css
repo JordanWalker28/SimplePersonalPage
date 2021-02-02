@@ -3,25 +3,30 @@
     border-color: orange;
   }
   50% {
-    border-color: rgb(196, 52, 0);
+    border-color: orangered;
   }
   100% {
     border-color: orange;
   }
 }
+body {
+  background-image: url(../src/image/background.jpg);
+  background-size: auto;
+}
+
 #header {
-  background-color: lightblue;
+  background-color: rgba(173, 216, 230, 0.377);
   min-height: 3em;
 }
 #header #header-inner {
   width: 80%;
   margin: 0 auto;
-  background-color: green;
+  background-color: rgba(0, 128, 0, 0.637);
   min-height: inherit;
   border: 3px solid black;
   border-radius: 5px;
   animation-name: boxshadow;
-  animation-duration: 3s;
+  animation-duration: 0.2s;
   animation-iteration-count: infinite;
 }
 #header #header-inner #buttons {
@@ -33,7 +38,9 @@
 #header #header-inner #buttons p {
   margin: 0 auto;
   margin-top: 1em;
-  width: 3em;
+  width: 100px;
+  padding: 5px;
+  margin-bottom: 1em;
   text-align: center;
   border: 1px solid black;
   border-radius: 5px;
@@ -45,6 +52,13 @@
 #header #header-inner #buttons p:hover {
   background-color: #ffa600;
   color: black;
+}
+#header #header-inner #welcomeMessage {
+  color: #ffa600;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 1.7em;
 }
 
 /*# sourceMappingURL=index.css.map */
